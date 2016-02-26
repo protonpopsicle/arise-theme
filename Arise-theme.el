@@ -1,50 +1,59 @@
-(deftheme Arise
-  "Created 2016-01-27.")
+(deftheme arise
+  "Created 2027.")
+
+(let (
+      (arise-bg "#1d1216")
+      (arise-fg "#e7e7e7")
+      (arise-bg-hi "#D5D267")
+      (arise-fg-hi "#1d1216")
+      (arise-logicoma-red "#B7464A")
+      (arise-motoko-blue "#303a9c")
+      (arise-jungle "#147a4a")
+      (arise-ranger "#5A716A")
+      (arise-concrete "#5E7587")
+      (arise-mauve "#93868f")
+      (arise-city-lights "#D5D267")
+      )
 
 (custom-theme-set-faces
- 'Arise
- '(cursor ((t (:background "#e7e7e7"))))
- '(fixed-pitch ((t (:family "Monospace"))))
- '(variable-pitch ((t (:family "Sans Serif"))))
- '(escape-glyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
- '(minibuffer-prompt ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "medium blue"))))
- '(highlight ((t (:background "yellow"))))
- '(region ((t (:background "#333333"))))
- '(shadow ((((class color grayscale) (min-colors 88) (background light)) (:foreground "grey50")) (((class color grayscale) (min-colors 88) (background dark)) (:foreground "grey70")) (((class color) (min-colors 8) (background light)) (:foreground "green")) (((class color) (min-colors 8) (background dark)) (:foreground "yellow"))))
- '(secondary-selection ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "SkyBlue4")) (((class color) (min-colors 16) (background light)) (:background "yellow")) (((class color) (min-colors 16) (background dark)) (:background "SkyBlue4")) (((class color) (min-colors 8)) (:foreground "black" :background "cyan")) (t (:inverse-video t))))
- '(trailing-whitespace ((((class color) (background light)) (:background "red1")) (((class color) (background dark)) (:background "red1")) (t (:inverse-video t))))
- '(font-lock-builtin-face ((((class grayscale) (background light)) (:weight bold :foreground "LightGray")) (((class grayscale) (background dark)) (:weight bold :foreground "DimGray")) (((class color) (min-colors 88) (background light)) (:foreground "dark slate blue")) (((class color) (min-colors 88) (background dark)) (:foreground "LightSteelBlue")) (((class color) (min-colors 16) (background light)) (:foreground "Orchid")) (((class color) (min-colors 16) (background dark)) (:foreground "LightSteelBlue")) (((class color) (min-colors 8)) (:weight bold :foreground "blue")) (t (:weight bold))))
- '(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
- '(font-lock-comment-face ((t (:foreground "#147a4a"))))
- '(font-lock-constant-face ((t (:foreground "#5E7587"))))
- '(font-lock-doc-face ((t (:inherit font-lock-string-face))))
- '(font-lock-function-name-face ((t (:foreground "#303a9c" :slant italic :weight bold))))
- '(font-lock-keyword-face ((t (:foreground "#93868f"))))
- '(font-lock-negation-char-face ((t nil)))
- '(font-lock-preprocessor-face ((t (:inherit (font-lock-builtin-face)))))
- '(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
- '(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
- '(font-lock-string-face ((t (:foreground "#5A716A"))))
- '(font-lock-type-face ((((class grayscale) (background light)) (:weight bold :foreground "Gray90")) (((class grayscale) (background dark)) (:weight bold :foreground "DimGray")) (((class color) (min-colors 88) (background light)) (:foreground "ForestGreen")) (((class color) (min-colors 88) (background dark)) (:foreground "PaleGreen")) (((class color) (min-colors 16) (background light)) (:foreground "ForestGreen")) (((class color) (min-colors 16) (background dark)) (:foreground "PaleGreen")) (((class color) (min-colors 8)) (:foreground "green")) (t (:underline (:color foreground-color :style line) :weight bold))))
- '(font-lock-variable-name-face ((t (:foreground "#B7464A"))))
- '(font-lock-warning-face ((t (:inherit (error)))))
- '(button ((t (:inherit (link)))))
- '(link ((((class color) (min-colors 88) (background light)) (:underline (:color foreground-color :style line) :foreground "RoyalBlue3")) (((class color) (background light)) (:underline (:color foreground-color :style line) :foreground "blue")) (((class color) (min-colors 88) (background dark)) (:underline (:color foreground-color :style line) :foreground "cyan1")) (((class color) (background dark)) (:underline (:color foreground-color :style line) :foreground "cyan")) (t (:inherit (underline)))))
- '(link-visited ((default (:inherit (link))) (((class color) (background light)) (:foreground "magenta4")) (((class color) (background dark)) (:foreground "violet"))))
- '(fringe ((((class color) (background light)) (:background "grey95")) (((class color) (background dark)) (:background "grey10")) (t (:background "gray"))))
- '(header-line ((default (:inherit (mode-line))) (((type tty)) (:underline (:color foreground-color :style line) :inverse-video nil)) (((class color grayscale) (background light)) (:box nil :foreground "grey20" :background "grey90")) (((class color grayscale) (background dark)) (:box nil :foreground "grey90" :background "grey20")) (((class mono) (background light)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "black" :background "white")) (((class mono) (background dark)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "white" :background "black"))))
- '(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
- '(mode-line ((((class color) (min-colors 88)) (:foreground "black" :background "grey75" :box (:line-width -1 :color nil :style released-button))) (t (:inverse-video t))))
- '(mode-line-buffer-id ((t (:weight bold))))
- '(mode-line-emphasis ((t (:weight bold))))
- '(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color "grey40" :style released-button))) (t (:inherit (highlight)))))
- '(mode-line-inactive ((default (:inherit (mode-line))) (((class color) (min-colors 88) (background light)) (:background "grey90" :foreground "grey20" :box (:line-width -1 :color "grey75" :style nil) :weight light)) (((class color) (min-colors 88) (background dark)) (:background "grey30" :foreground "grey80" :box (:line-width -1 :color "grey40" :style nil) :weight light))))
- '(isearch ((((class color) (min-colors 88) (background light)) (:foreground "lightskyblue1" :background "magenta3")) (((class color) (min-colors 88) (background dark)) (:foreground "brown4" :background "palevioletred2")) (((class color) (min-colors 16)) (:foreground "cyan1" :background "magenta4")) (((class color) (min-colors 8)) (:foreground "cyan1" :background "magenta4")) (t (:inverse-video t))))
- '(isearch-fail ((((class color) (min-colors 88) (background light)) (:background "RosyBrown1")) (((class color) (min-colors 88) (background dark)) (:background "red4")) (((class color) (min-colors 16)) (:background "red")) (((class color) (min-colors 8)) (:background "red")) (((class color grayscale)) (:foreground "grey")) (t (:inverse-video t))))
- '(lazy-highlight ((((class color) (min-colors 88) (background light)) (:background "paleturquoise")) (((class color) (min-colors 88) (background dark)) (:background "paleturquoise4")) (((class color) (min-colors 16)) (:background "turquoise3")) (((class color) (min-colors 8)) (:background "turquoise3")) (t (:underline (:color foreground-color :style line)))))
- '(match ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
- '(next-error ((t (:inherit (region)))))
- '(query-replace ((t (:inherit (isearch)))))
- '(default ((t (:inherit nil :stipple nil :background "#1d1216" :foreground "#e7e7e7" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Menlo")))))
+ 'arise
+ `(default ((t (:background ,arise-bg :foreground ,arise-fg))))
 
-(provide-theme 'Arise)
+ ;; The Editor itself..
+ `(cursor ((t (:background ,arise-fg :foreground ,arise-bg))))
+ `(highlight ((t (:background ,arise-bg-hi))))
+ `(region ((t (:background ,arise-bg-hi :foreground ,arise-fg-hi))))
+ `(header-line ((t (:foreground ,arise-city-lights
+				:box (:line-width -1 :style released-button)))))
+
+ ;; User Interface stuff
+ `(menu ((t (:foreground ,arise-fg :background ,arise-bg))))
+ `(mode-line ((t (:foreground ,arise-bg
+			      :background ,arise-logicoma-red 
+			      :box (:line-width -1 :style pressed-button)))))
+ `(mode-line-inactive ((t (:foreground ,arise-bg
+				       :background ,arise-mauve
+				       :box (:line-width -1 :style released-button)))))
+ `(mode-line-buffer-id ((t (:foreground ,arise-bg :weight bold))))
+ `(minibuffer-prompt ((t (:foreground ,arise-ranger))))
+
+ ;; '(web-mode-html-tag-face         ((t (:foreground "#FFB6C1" ))))
+ ;; font lock
+ `(font-lock-comment-face ((t (:foreground ,arise-mauve))))
+ `(font-lock-comment-delimiter-face ((t (:foreground ,arise-mauve))))
+ `(font-lock-constant-face ((t (:foreground ,arise-concrete))))
+ `(font-lock-builtin-face ((t (:foreground ,arise-concrete))))
+ `(font-lock-function-name-face ((t (:foreground ,arise-motoko-blue :background, nil))))
+ `(font-lock-variable-name-face ((t (:foreground ,arise-logicoma-red :background, nil))))
+ `(font-lock-keyword-face ((t (:foreground ,arise-jungle))))
+ `(font-lock-string-face ((t (:foreground ,arise-ranger :background, nil))))
+ `(font-lock-doc-string-face ((t (:foreground ,arise-fg-hi))))
+ `(font-lock-type-face ((t (:foreground ,arise-logicoma-red))))
+ ))
+
+;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'arise)
