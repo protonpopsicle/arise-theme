@@ -1,72 +1,66 @@
 (deftheme arise
-  "Created 2027.")
+  "Created 2027. gray white red green tan orange blue")
 
 (let (
-      (arise-bg "#1d1216")
-      (arise-fg "#B0A5AB")
-      ;; (arise-fg "#e7e7e7")
-      ;; (arise-tan "#B5B4B0")
-      ;; (arise-bg2 "#C1BEB7")
-      ;; (arise-fg "#000000")
-      (arise-bg-hi "#E1791A")
-      (arise-fg-hi "#1d1216")
-      ;; (arise-logicoma-red "#B7464A")
-      (arise-logicoma-red "#AA2233")
-      ;; (arise-motoko-blue "#303a9c")
-      (arise-motoko-blue "#33389C")
-      (arise-jungle "#147a4a")
-      (arise-ranger "#5A716A")
-      (arise-concrete "#5E7587")
-      (arise-mauve "#B0A5AB")
-      (arise-city-lights "#E1791A")
-      (arise-logo "#FFFFFF")
-      (arise-energy "#98FFFC")
-      (arise-shadow "#46537F")
-      (arise-army "#334422")
-      (arise-tan "##AA9977")
+      ;; (arise-red "#B44142")
+      ;; (arise-charcoal "#332C30")
+      ;; (arise-gray "#CBCED4")
+      ;; (arise-purple "#6D3C40")
+      ;; (arise-pink "#AA868A")
+      ;; (arise-slate "#8F99A6")
+      ;; (arise-mauve "#956C74")
+      ;; (arise-tan "#B4A49C")
+      ;; (arise-orange "#E96C6C")
+      (arise-red "#A44450")
+      (arise-blue "#154669")
+      (arise-gray "#E4ECEB")
+      (arise-orange "#DCA553")
+      (arise-teal "#70B1A3")
+      (arise-pink "#C3757F")
+      (arise-sea "#36C2BA")
+      (arise-aqua "#9EE8D9")
+      (arise-tan "#C6B292")
+ 
+      (arise-charcoal "#707A80")
+      ;; (arise-concrete "#555555")
       )
 
 (custom-theme-set-faces
  'arise
- `(default ((t (:background ,arise-bg :foreground ,arise-fg))))
+ `(default ((t (:background ,"black" :foreground ,arise-gray))))
 
  ;; The Editor itself..
- `(cursor ((t (:background ,arise-fg :foreground ,arise-bg))))
- `(highlight ((t (:background ,arise-bg-hi))))
- ;; `(fringe ((t (:background ,arise-bg2 :foreground ,arise-logo))))
- `(region ((t (:background ,arise-bg-hi :foreground ,arise-fg-hi))))
- `(header-line ((t (:foreground ,arise-city-lights
-				:box (:line-width -1 :style released-button)))))
+ `(cursor ((t (:background ,arise-gray :foreground ,"black"))))
+ ;; `(highlight ((t (:background ,arise-pink))))
+ ;; `(fringe ((t (:background ,"#555555" :foreground ,arise-gray))))
+ `(region ((t (:background ,"black" :foreground ,arise-gray))))
 
  ;; User Interface stuff
- `(menu ((t (:foreground ,arise-fg :background ,arise-bg))))
- `(mode-line-buffer-id ((t (:foreground ,arise-energy
-					:background ,arise-shadow))))
- `(minibuffer-prompt ((t (:foreground ,arise-logicoma-red))))
- `(mode-line ((t (:foreground ,arise-bg
-			      :background ,arise-concrete
-			      ;; :box (:line-width -1 :color ,arise-army :style nil)
+ ;; `(menu ((t (:foreground ,arise-fg :background ,arise-backg))))
+ ;; `(mode-line-buffer-id ((t (:foreground ,arise-energy
+ ;; 					:background ,arise-shadow))))
+ ;; `(minibuffer-prompt ((t (:foreground ,arise-logicoma-red))))
+ `(mode-line ((t (:foreground ,"black"
+			      :background ,arise-blue
 			      ))))
- `(mode-line-inactive ((t (:foreground ,arise-army
-				       :background ,arise-bg
-				       :box (:line-width -1 :color ,arise-army :style nil)))))
- `(mode-line-buffer-id ((t (:foreground ,arise-bg :weight bold))))
- `(minibuffer-prompt ((t (:foreground ,arise-ranger))))
+ `(mode-line-inactive ((t (:foreground ,"black"
+				       :background ,arise-charcoal
+				       ))))
+ `(show-paren-match-face ((t (:background ,arise-pink))))
+ ;; `(mode-line-buffer-id ((t (:foreground ,arise-bg :weight bold))))
+ ;; `(minibuffer-prompt ((t (:foreground ,arise-fg))))
 
  ;; font lock
- `(font-lock-comment-face ((t (:foreground ,arise-mauve))))
- `(font-lock-comment-delimiter-face ((t (:foreground ,arise-mauve))))
- `(font-lock-constant-face ((t (:foreground ,arise-city-lights))))
- `(font-lock-builtin-face ((t (:foreground ,arise-concrete))))
- `(font-lock-function-name-face ((t (:foreground ,arise-logicoma-red :background, nil))))
- `(font-lock-variable-name-face ((t (:foreground ,arise-logo :background, nil))))
- `(font-lock-keyword-face ((t (:foreground ,arise-motoko-blue))))
- `(font-lock-string-face ((t (:foreground ,arise-tan))))
- `(font-lock-doc-string-face ((t (:foreground ,arise-fg-hi))))
- `(font-lock-type-face ((t (:foreground ,arise-logicoma-red))))
-
- ;; Beacon
- ;; `(beacon-fallback-background ((t (:background ,arise-city-lights))))
+ `(font-lock-comment-face ((t (:foreground ,arise-charcoal))))
+ `(font-lock-comment-delimiter-face ((t (:foreground ,arise-charcoal))))
+ `(font-lock-constant-face ((t (:foreground ,arise-sea))))
+ `(font-lock-builtin-face ((t (:foreground ,arise-sea))))
+ `(font-lock-function-name-face ((t (:foreground ,arise-orange))))
+ `(font-lock-variable-name-face ((t (:foreground, arise-tan))))
+ `(font-lock-keyword-face ((t (:foreground ,arise-red))))
+ `(font-lock-string-face ((t (:foreground ,arise-aqua))))
+ `(font-lock-doc-string-face ((t (:foreground ,arise-aqua))))
+ `(font-lock-type-face ((t (:foreground ,arise-sea))))
  ))
 
 ;;;###autoload
